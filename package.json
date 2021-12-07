@@ -1,0 +1,17 @@
+{
+  "name": "polling-system-api",
+  "version": "1.0.0",
+  "description": "An api for a polling system",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anmol Arora",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.8",
+    "morgan": "^1.10.0"
+  }
+}
