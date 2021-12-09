@@ -6,9 +6,7 @@ const Option = require('../models/option');
 module.exports.listAll = async function(req, res){
     try{
         // find all the questions with their linked options
-        const questions = await Question.find({})
-            .populate('options', '_id text votes link_to_vote')
-            .exec();
+        const questions = await Question.find({}, 'title');
         
         res.status(200).json({
             questionsCount: questions.length,
