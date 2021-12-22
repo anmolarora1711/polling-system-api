@@ -2,6 +2,8 @@
 const express = require('express');
 const morgan = require('morgan');
 
+// to access environment variables
+require('dotenv').config();
 
 // importing database connection file
 const db = require('./config/mongoose');
@@ -12,7 +14,7 @@ const app = express();
 
 
 // port on which server will listen
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 
 // middlewares

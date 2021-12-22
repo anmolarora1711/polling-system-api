@@ -1,7 +1,7 @@
 // configuration for creating database connection
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/polling-system-api');
+mongoose.connect(process.env.MONGO_DB);
 
 const db = mongoose.connection;
 
