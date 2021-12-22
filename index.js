@@ -1,9 +1,11 @@
+// to access environment variables
+require('dotenv').config();
+
+
 // third-party modules
 const express = require('express');
 const morgan = require('morgan');
 
-// to access environment variables
-require('dotenv').config();
 
 // importing database connection file
 const db = require('./config/mongoose');
